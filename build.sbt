@@ -1,5 +1,5 @@
 
-name := "scalaspl"
+name := "scalapsl"
 
 organization := "com.github.workingDog"
 

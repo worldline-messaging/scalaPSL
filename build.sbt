@@ -26,7 +26,7 @@ assemblyMergeStrategy in assembly := {
     oldStrategy(x)
 }
 
-homepage := Some(url("https://github.com/workingDog/scalaPSL"))
+homepage := Some(url("https://github.com/worldline-messaging/scalaPSL"))
 
 licenses := Seq("Apache 2" -> url("http://www.apache.org/licenses/LICENSE-2.0"))
 

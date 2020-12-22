@@ -1,5 +1,6 @@
 package com.kodekutters.psl
 
+import scala.collection.parallel.CollectionConverters._
 import scala.collection.parallel.immutable.ParSeq
 import scala.io.BufferedSource
 

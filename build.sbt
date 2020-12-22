@@ -5,9 +5,12 @@ organization := "com.github.workingDog"
 
 version := (version in ThisBuild).value
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.4"
 
-libraryDependencies += "com.typesafe" % "config" % "1.3.4"
+libraryDependencies ++= List(
+  "com.typesafe" % "config" % "1.4.1",
+  "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.0"
+)
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-Xlint")
 

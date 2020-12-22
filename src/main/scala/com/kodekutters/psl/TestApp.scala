@@ -12,7 +12,7 @@ package com.kodekutters.psl
   */
 object TestApp {
 
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     val psl = PublicSuffixList()
     test1(psl)
     test2(psl)
@@ -25,8 +25,8 @@ object TestApp {
     */
   private def checkPublicSuffix(domain: String, expected: String)(implicit psl: PublicSuffixList): Unit = {
     psl.registrable(domain) match {
-      case None => println(Option(expected).isEmpty + "  tld: " + psl.tld(domain) + " sld: " + psl.sld(domain) + " trd: " + psl.trd(domain) + "  input domain: " + domain + " expected: " + expected)
-      case Some(regDomain) => println((regDomain == expected) + "  tld: " + psl.tld(domain) + " sld: " + psl.sld(domain) + " trd: " + psl.trd(domain) + "  input domain: " + domain + " expected: " + expected)
+      case None => println("" + Option(expected).isEmpty + "  tld: " + psl.tld(domain) + " sld: " + psl.sld(domain) + " trd: " + psl.trd(domain) + "  input domain: " + domain + " expected: " + expected)
+      case Some(regDomain) => println("" + (regDomain == expected) + "  tld: " + psl.tld(domain) + " sld: " + psl.sld(domain) + " trd: " + psl.trd(domain) + "  input domain: " + domain + " expected: " + expected)
     }
   }
 

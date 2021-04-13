@@ -1,4 +1,4 @@
-publishArtifact in Test := false
+Test / publishArtifact := false
 
 // Note: he final slash '/' is important to really publish uploaded files.
 // Otherwise the uploaded files are in 'unpublished' state and require
